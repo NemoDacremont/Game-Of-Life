@@ -1,0 +1,65 @@
+
+:root {
+	--primary: #BF304A;
+	--second: #80A7BF;
+	--tertiary: #4D6F8C;
+	--jsp: #86506B;
+	--background: #DFEDF2;
+	--text: #111C26;
+	--header: #A9C6D9;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	color: var(--text);
+	font-family: 'Poppins', cursive;
+}
+
+
+body {
+	height: 100vh;
+	width: 100vw;
+
+	background-color: var(--background);
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 9fr;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+	background-color: var(--header);
+}
+
+h1 {
+	font-family: 'Jost', cursive;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	gap: .25em;
+}
+
+.actions button {
+	font-size: 16px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#game-canvas {
+	position: relative;
+}
